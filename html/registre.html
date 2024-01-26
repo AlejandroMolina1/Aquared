@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title img src="../Imagenes/logo1.png" alt="">REGISTRO</title>
+        <link rel="stylesheet" href="../CSS/registre.css">
+    </head>
+    <body id="registroPagina">
+        <header>
+            <div class="encabezado">
+                <div class="logo">
+                    <a href="index.html"><img src="../Imagenes/logo.png" alt="" height="100" width="200"></a>
+                </div>
+                <div class="nav1">
+                    <nav>
+                        <a href="login.html">LOGIN</a>
+                        <a href="registre.html" class="boton">REGISTRO</a>
+                        <div class="perfil">
+                            <div class="perfilC">
+                                <a href="perfil.html">PERFIL</a>
+                                <span>Alejandro</span>
+                            </div>
+                            <img src="../Imagenes/fotoperfil.png" alt=""  height="50" width="100">
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header> 
+        <section>
+            <div class="loginf">
+                <div>
+                    <img src="../Imagenes/logo1.png" alt="" height="100" width="200">
+                </div>
+                <div>
+                    <form action="">
+                        <label for="fname">Nombre</label>
+                        <input required  type="text" id="fname" name="fname" placeholder="Nombre">
+                        <label for="Email">Email</label>
+                        <input required  type="email">
+                        <label for="Contraseña">Password</label>
+                        <input required type="password" id="Contraseña" name="Contraseña" placeholder="**">
+                        <label for="file">Pon tu foto</label>
+                        <input type="file" id="picture" accept="image/*" onchange="previewImage(event)">
+                        <img id="preview-image" src="../Imagenes/fotoperfil.png" alt="" height="40px" width="40px">
+                        <input type="submit" value="Crear Cuenta" >
+                    </form>
+                    <span>Si ya tienes cuenta pulsa en login!<a href="login.html">Login</a></span>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="Fnav">
+                <span>Aquared 2023/2024 @Alejandro</span>
+                <div class="nav2">
+                    <nav>
+                        <a href="">COOKIES</a>
+                        <a href="">POLITICAS Y PRIVACIDAD</a>
+                        <a href="">TERMINOS Y CONDICIONES</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>  
+    </body>
+    <script>
+        function previewImage(event) {
+            // Get the file input element
+            var fileInput = event.target;
+        
+            // Get the selected file
+            var file = fileInput.files[0];
+        
+            // Get the image element
+            var imgElement = document.getElementById('preview-image');
+        
+            // Create a FileReader
+            var reader = new FileReader();
+        
+            // Set up the FileReader to update the image source when the file is read
+            reader.onload = function (e) {
+                imgElement.src = e.target.result;
+            };
+        
+            // Read the selected file as a data URL
+            reader.readAsDataURL(file);
+        }
+        </script>
+    
+</html>

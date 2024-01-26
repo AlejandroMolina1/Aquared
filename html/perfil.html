@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>Aquared</title>
+        <link rel="stylesheet" href="../CSS/perfil.css">
+       
+    </head>
+    <body id="indexPagina">
+        <header>
+            <div class="encabezado">
+                <div class="logo">
+                    <a href="index.html"><img src="../Imagenes/logo.png" alt="" height="100" width="200"></a>
+                </div>
+                <div class="nav1">
+                    <nav>
+                        <a href="login.html">LOGIN</a>
+                        <a href="registre.html">REGISTRO</a>
+                        <div class="perfil">
+                            <div class="perfilC">
+                                <a href="perfil.html">PERFIL</a>
+                                <span>Alejandro</span>
+                            </div>
+                            <img src="../Imagenes/fotoperfil.png" alt=""  height="50" width="100">
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section class="section1">
+            <div class="ContainerDiv">
+                <div class="Dividi">
+                    <a href="">
+                        <img src="../Imagenes/home.png" alt="" height="40px" width="40px">
+                        <span>Home</span>
+                    </a>
+                </div>
+                <div class="Dividi">
+                    <a href="">
+                        <img src="../Imagenes/pngtree-vector-find-icon-png-image_4144512.jpg" alt="" height="35px" width="35px">
+                        <span>Buscar</span>
+                    </a>
+                </div>
+                <div class="Dividi">
+                    <a href="">
+                        <img src="../Imagenes/click.png" alt="" height="30px" width="30px">
+                        <span>Para ti</span>
+                    </a>
+                </div>
+                <div class="Dividi">
+                    <a href="">
+                        <img src="../Imagenes/mensaje.png" alt="" height="35px" width="35px">
+                        <span>Mensajes</span>
+                    </a>
+                </div>
+                <div class="Dividi">
+                    <a href="">
+                        <img src="../Imagenes/notificacion.png" alt="" height="35px" width="35px">
+                        <span>Notificaciones</span>
+                    </a>
+                </div>
+            </div>
+            <!-- El otro lado de la seccion-->
+            <div class="Post">
+            <div class="MF">
+                <div class="TituloDePerfil">
+                    <span></span>
+                    <a href=""><img src="" alt="" height="33px" width="33px"></a>
+                </div>
+                <div class="ComentarLIKE">
+                    <a href=""><img src="../Imagenes/corazon.png" alt="" height="50px" width="50px"></a>
+                    <a href=""><img src="../Imagenes/coment.png" alt="" height="40px" width="40px"></a>
+                </div>
+                <img src="" alt="" height="350px" width="350px">
+                <div>
+                    <p></p>
+                </div>
+            </div>
+                <div class="MF">
+                    <div class="TituloDePerfil">
+                        <span></span>
+                        <a href=""><img src="" alt="" height="33px" width="33px"></a>
+                    </div>
+                    <div class="ComentarLIKE">
+                        <a href=""><img src="../Imagenes/corazon.png" alt="" height="50px" width="50px"></a>
+                        <a href=""><img src="../Imagenes/coment.png" alt="" height="40px" width="40px"></a>
+                    </div>
+                    <img src="" alt="" height="350px" width="350px">
+                    <div>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="MF">
+                    <div class="TituloDePerfil">
+                        <span></span>
+                        <a href=""><img src="" alt="" height="33px" width="33px"></a>
+                    </div>
+                    <div class="ComentarLIKE">
+                        <a href=""><img src="../Imagenes/corazon.png" alt="" height="50px" width="50px"></a>
+                        <a href=""><img src="../Imagenes/coment.png" alt="" height="40px" width="40px"></a>
+                    </div>
+                    <img src="" alt="" height="350px" width="350px">
+                    <div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <section class="section2">
+                <div>
+                    <div class="imagenPerfil">
+                        <form action="">
+                            <label for="picture">Edita tu Foto de perfil</label>
+                            <input type="file" id="picture" accept="image/*" onchange="previewImage(event)">
+                        </form>
+                        <div class="FotoCentro">
+                            <img id="preview-image" src="../Imagenes/ale.png" alt="" height="40px" width="40px">
+                        </div>
+                </div>
+            </section>
+        </section>
+        <footer>
+            <div class="Fnav">
+                <span>Aquared 2023/2024 @Alejandro</span>
+                <div class="nav2">
+                    <nav>
+                        <a href="">COOKIES</a>
+                        <a href="">POLITICAS Y PRIVACIDAD</a>
+                        <a href="">TERMINOS Y CONDICIONES</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>   
+    </body>
+    <script>
+        function previewImage(event) {
+            // Get the file input element
+            var fileInput = event.target;
+        
+            // Get the selected file
+            var file = fileInput.files[0];
+        
+            // Get the image element
+            var imgElement = document.getElementById('preview-image');
+        
+            // Create a FileReader
+            var reader = new FileReader();
+        
+            // Set up the FileReader to update the image source when the file is read
+            reader.onload = function (e) {
+                imgElement.src = e.target.result;
+            };
+        
+            // Read the selected file as a data URL
+            reader.readAsDataURL(file);
+        }
+        </script>
+</html>

@@ -1,0 +1,137 @@
+*{
+    margin: 0%;
+}
+
+#loginPagina {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 15% 75% 10%;
+}
+.perfil{
+    background-color: #799ec2;
+    border-radius: 100px;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.perfil img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.perfilC{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+header{
+    background-color: #FEFCFB;
+}
+nav a.boton{
+    color: #0a1128;
+    border-bottom: 2px solid #0a1128;
+}
+.nav1 a:hover{
+    color: #1282a2;
+}
+.encabezado{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+.nav1 nav {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+.nav1 nav a{
+    text-decoration: none;
+    color: #034078;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Imagenes/oceano.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+section .loginf{
+    background-color: #FEFCFB;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 30px #034078;
+}
+
+.loginf form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1282a2;
+    border-radius: 40px;
+    padding: 60px
+}
+input{
+    background-color: #FEFCFB;
+    border-radius: 5cqmin;
+    border: 0;
+    width: 200px;
+    height: 20px;
+}
+span a{
+    text-decoration: none;
+    color: #034078;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+input[type="submit"]{
+    background-color: #034078;
+    border-radius: 5;
+    border: 0;
+    color: #FEFCFB;
+}
+label{
+    font-size: 18px;
+    color: #FEFCFB;
+}
+footer {
+    padding: 20px;
+    background-color: #0a1128;
+    color: #FEFCFB;
+}
+.loginf span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav2 nav {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+.nav2 a{
+    text-decoration: none;
+    color: #034078;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fnav{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.nav2 a:hover{
+    color: #1282a2;
+}
